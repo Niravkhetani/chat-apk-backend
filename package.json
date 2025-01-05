@@ -1,0 +1,66 @@
+{
+  "name": "razgovor-server",
+  "private": true,
+  "version": "1.4.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bson": "^6.3.0",
+    "concurrently": "^7.6.0",
+    "connect-mongo": "^0.8.2",
+    "cron": "^2.3.0",
+    "cron-parser": "^4.9.0",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "fcm-node": "^1.5.2",
+    "fs": "0.0.1-security",
+    "grunt": "1.0.4",
+    "handlebars": "^4.7.7",
+    "joi": "^13.5.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mkdirp": "^1.0.4",
+    "mongodb": "3.6",
+    "mongoose": "^6.4.5",
+    "node-cron": "^3.0.2",
+    "node-dir": "^0.1.17",
+    "nodemailer": "^6.9.2",
+    "path": "^0.12.7",
+    "randomstring": "^1.1.5",
+    "sails": "^1.2.3",
+    "sails-hook-cron": "^3.2.0",
+    "sails-hook-grunt": "^4.0.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^2.0.0",
+    "sails-mongo": "^2.0.0",
+    "skipper": "^0.9.0-4",
+    "unique-username-generator": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "nodemon": "^3.0.2"
+  },
+  "scripts": {
+    "dev": "nodemon sails lift",
+    "start": "sails lift",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
+    "sails-lift": "sails lift"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dcnetsa/arsell-server.git"
+  },
+  "author": "anonymous node/sails user",
+  "license": "",
+  "engines": {
+    "node": "^12.13"
+  }
+}
